@@ -77,6 +77,46 @@
                 <td style="padding:20px;width:30%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='malle_image'>
+                      <img src='images/MM2024.jpg' width="210">
+                    </div>
+                    <img src='images/MM2024.jpg' width="210">
+                  </div>
+                  <script type="text/javascript">
+                    function malle_start() {
+                      document.getElementById('malle_image').style.opacity = "1";
+                    }
+
+                    function malle_stop() {
+                      document.getElementById('malle_image').style.opacity = "0";
+                    }
+                    malle_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:70%;vertical-align:top">
+                  <a href="./papers/MM2024.pdf">
+                    <papertitle>Private Gradient Estimation is Useful for Generative Modeling</papertitle>
+                  </a>
+                  <br>
+                  <strong>Bochao Liu</strong>, Pengju Wang, Weijia Guo, Yong Li, Liansheng Zhuang, Weiping Wang and Shiming Ge*
+                  <br>
+                  <em>ACM MM</em>, 2024, Oral &nbsp
+                  <br>
+                  <a href="./papers/MM2024.pdf">pdf</a>
+                  <p></p>
+                  <p>
+                    While generative models have proved successful in many domains, they may pose a privacy leakage risk in practical deployment. To address this issue, differentially private generative model learning has emerged as a solution to train private generative models for different downstream tasks. However, existing private generative modeling approaches face significant challenges in generating high-dimensional data due to the inherent complexity involved in modeling such data. In this work, we present a new private generative modeling approach where samples are generated via Hamiltonian dynamics with gradients of the private dataset estimated by a well-trained network. In the approach, we achieve differential privacy by perturbing the projection vectors in the estimation of gradients with sliced score matching. In addition, we enhance the reconstruction ability of the model by incorporating a residual enhancement module during the score matching. For sampling, we perform Hamiltonian dynamics with gradients estimated by the well-trained network, allowing the sampled data close to the private dataset's manifold step by step. In this way, our model is able to generate data with a resolution of 256x256. Extensive experiments and analysis clearly demonstrate the effectiveness and rationality of the proposed approach.
+                  </p>
+                </td>
+              </tr>
+        </tbody>
+    </table>
+
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+            <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+                <td style="padding:20px;width:30%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='malle_image'>
                       <img src='images/ECCV2024.jpg' width="210">
                     </div>
                     <img src='images/ECCV2024.jpg' width="210">
